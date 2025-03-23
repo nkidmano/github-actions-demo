@@ -21,7 +21,7 @@ jobs:
       - name: Check for ESLint Errors
         run: npm run lint
       - name: Check for Type Errors
-        run: npm run tsc
+        run: npm run typecheck
       - name: Build Project
         run: npm run build
       - uses: actions/upload-artifact@v4
