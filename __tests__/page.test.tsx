@@ -7,12 +7,12 @@ jest.mock("../src/utils/flagsmith", () => {
     getEnvironmentFlags: jest.fn(() =>
       Promise.resolve({
         isFeatureEnabled: () => {
-          return true
-        }
-      })
-    )
-  }
-})
+          return true;
+        },
+      }),
+    ),
+  };
+});
 
 describe("Home", () => {
   it("renders a heading", async () => {
