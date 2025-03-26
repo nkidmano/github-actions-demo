@@ -10,6 +10,7 @@ export default async function Home() {
     <main className="main">
       <div>
         <h2>Hello World</h2>
+        <p>New text</p>
       </div>
       <br />
       {flags.isFeatureEnabled("search") && (
